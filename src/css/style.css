@@ -19,6 +19,11 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+  font-family: 'Microsoft YaHei';
+}
+h2.font {
+  font-family: 'Pacifico', cursive;
+  display: inline-block;
 }
 .icon {
   display: inline-block;
@@ -31,6 +36,12 @@ body {
   .container {
     width: 100vw;
   }
+}
+.clearfix,
+.products .section.content .main:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .header {
   padding: 40px 0;
@@ -387,4 +398,107 @@ body {
   font-weight: bold;
   margin: 20px 0;
   margin-top: 30px;
+}
+.products {
+  background-color: #c3e0f1;
+}
+.products .section.nav {
+  height: 350px;
+  background-color: #ebf6ff;
+  background-image: url("/imgs/milk03.png"), url("/imgs/list-bg.jpg");
+  background-position: center 225px, center center;
+  background-repeat: no-repeat;
+}
+.products .section.content {
+  background-color: #ebf6ff;
+  background-image: url("/imgs/products-bg.png");
+  background-position: center top;
+}
+.products .section.content .top-selector {
+  border-bottom: 1px solid #aaa;
+  padding: 15px 0;
+}
+.products .section.content .top-selector h2.font {
+  margin-right: 35px;
+  font-size: 25px;
+  color: #666;
+  position: relative;
+}
+.products .section.content .top-selector h2.font.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: -18px;
+  margin-top: 15px;
+  border-top: 5px solid #666;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.products .section.content .main {
+  padding: 30px 0;
+}
+.products .section.content .main .side-nav {
+  float: left;
+  width: 30%;
+  padding-right: 30px;
+}
+.products .section.content .main .side-nav h2 {
+  background-color: #fff;
+  border-radius: 30px;
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 0;
+}
+.products .section.content .main .side-nav .list {
+  margin-top: 20px;
+}
+.products .section.content .main .side-nav .list a {
+  color: #333;
+  display: block;
+  padding: 15px 0;
+  margin: 10px 0;
+  border-bottom: 1px solid #aaa;
+  text-decoration: none;
+}
+.products .section.content .main .side-nav .list a .icon {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.products .section.content .main .products-area {
+  float: left;
+  width: 70%;
+}
+.products .section.content .main .products-area .cardGroup .card {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.products .section.content .main .products-area .cardGroup .card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.products .section.content .main .products-area .cardGroup .card p.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.products .section.content .main .products-area .cardGroup .card p.intro {
+  font-size: 14px;
+  color: #888;
+}
+.products .section.content .main .products-area .cardGroup .card h4 {
+  color: #1d2087;
+  font-weight: bold;
+  margin-top: 12px;
+}
+.products .section.content .main .products-area .cardGroup .card h4 span {
+  font-size: 14px;
+  margin-left: 5px;
+  letter-spacing: 3px;
 }

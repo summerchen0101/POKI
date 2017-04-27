@@ -62,6 +62,12 @@ gulp.task('build:inject', ['inject'], function () {
         .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('build:combine', function () {
+    return gulp.src('./src/*.html')
+        .pipe(useref())
+        .pipe(gulp.dest('./dist'));
+});
+
 gulp.task('build:copy',function(){
     return gulp.src('./src/**/*')
         .pipe(gulp.dest('./dist'))
@@ -80,7 +86,7 @@ gulp.task('build', function (cb) {
     runSequence(
         'build:clean',
         'build:copy',
-        'build:inject',
+        'build:combine',
         'build:remove',
         'build:fonts',
         cb);

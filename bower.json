@@ -28,7 +28,8 @@
     "jquery.scrollTo": "^2.1.2",
     "scrollmagic": "^2.0.5",
     "uikit": "^3.0.0",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "nouislider": "^9.2.0"
   },
   "devDependencies": {
     "html5shiv": "~3.7.2"

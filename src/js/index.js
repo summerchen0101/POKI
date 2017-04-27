@@ -11,3 +11,5 @@ $('.carousel').slick({
     nextArrow: `<button class="ctrl-arrow arrow-right"><i class="icon icon-right-arrow"></i></button>`,
 });
 
+
+

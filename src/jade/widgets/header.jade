@@ -10,9 +10,9 @@
             .icon.icon-cart
             .icon.icon-member
     .header-nav 
-        a(href="/", class="active") 首頁
+        a(href="/", class={active: currentUrl === 'index'}) 首頁
         a(href="") 公司簡介
         a(href="") 最新消息
-        a(href="") 產品介紹
+        a(href="/products.html", class={active: currentUrl === 'products' || currentUrl === 'product-item'}) 產品介紹
         a(href="") Q&A
         a(href="") 聯絡我們

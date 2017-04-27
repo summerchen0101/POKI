@@ -79,7 +79,11 @@ gulp.task('build:fonts',function(){
         .pipe(gulp.dest('./dist/fonts'))
 })
 gulp.task('build:remove', function (cb) {
-    del(['dist/jade', 'dist/stylus'], cb);
+    del([
+        'dist/jade', 
+        'dist/stylus',
+        'dist/bower',
+        ], cb);
 });
 
 gulp.task('build', function (cb) {
@@ -89,6 +93,7 @@ gulp.task('build', function (cb) {
         'build:combine',
         'build:remove',
         'build:fonts',
+        'serve:dist',
         cb);
 
 });
@@ -148,7 +153,7 @@ gulp.task('style', function () {
 /////////////////////////////////////////////////////////////////
 
 gulp.task("jade", function () {
-    return gulp.src(["src/jade/**/*.jade", '!src/jade/layout.jade'])
+    return gulp.src(["src/jade/**/*.jade", '!src/jade/layout.jade', '!src/jade/widgets/**/*.jade'])
         .pipe(plumber())
         .pipe(jade({
             pretty: true
@@ -163,12 +168,11 @@ gulp.task("jade", function () {
 // Browser-sync Task
 /////////////////////////////////////////////////////////////////
 
-gulp.task("serve", function () {
+gulp.task("serve:dev", function () {
 
     browserSync.init({
         server: {
             baseDir: "src/",
-            routes: { '/bower_components': 'bower_components' }
         }
     });
 
@@ -180,8 +184,20 @@ gulp.task("serve", function () {
 
 
 
+
+gulp.task("serve:dist", function () {
+
+    browserSync.init({
+        server: {
+            baseDir: "dist/",
+        }
+    });
+});
+
+
+
 //////////////////////////////////////////////////////////////////
 // Default Task
 /////////////////////////////////////////////////////////////////
 
-gulp.task('default', ['serve']);
+gulp.task('default', ['serve:dev']);

@@ -1,3 +1,4 @@
 *.zip
+/src/bower
 /bower_components
 /dist

@@ -1,0 +1,190 @@
+.index
+    background-color: #C3E0F1
+    .section
+        position: relative
+    .section.sec1
+        background-color: #93C3E1
+        padding-bottom: 250px
+        z-index: 2
+        // background-image: url("/imgs/slider-bg.jpg")
+        
+        .carousel
+            width: 100%
+            button.ctrl-arrow
+                border: none 
+                background-color: transparent 
+                outline: none
+                display: block 
+                position: absolute
+                top: 45%
+                z-index: 9
+                cursor: pointer
+                &.arrow-left
+                    left: calc((100vw - 980px) / 2)
+                    margin-left: 40px
+                &.arrow-right
+                    right: calc((100vw - 980px) / 2)
+                    margin-right: 40px
+            .imgWrap
+                height: 100%
+                @media(max-width: media-mobile)
+                    width: calc(100vw - 40px)
+                    margin: 0 auto
+                img 
+                    max-width: 100%
+    
+    .section.sec2 
+        z-index: 2
+        background-image: url("/imgs/milk01.png")
+        background-position: top center 
+        background-repeat: no-repeat
+        // height: 723px
+        padding-top: 170px
+        margin-top: -250px
+        padding-bottom: 200px
+        .title 
+            text-align: center
+            margin-bottom: 35px
+
+        .cardGroup
+            .card 
+                text-align: center
+                img 
+                    width: 100%
+                    border-radius: 10px 
+                    overflow: hidden 
+                p 
+                    margin: 20px 0
+                    color: #666 
+                    font-size: 17px
+                    font-weight: bold 
+
+                a.more 
+                    text-decoration: none 
+                    border: none 
+                    background-color: #BCC4CC
+                    color: #fff
+                    display: inline-block 
+                    width: 100px 
+                    padding: 3px 0
+                    border-radius: 20px
+
+    .section.sec3
+        background-color: #fff
+        position: relative
+        z-index: 1
+        margin-top: -200px
+        padding: 200px 0
+
+        .title 
+            text-align: center
+            margin-bottom: 35px
+
+        .cardGroup
+            .card 
+                text-align: center
+                margin-bottom: 30px
+                img 
+                    width: 100%
+                    height: 200px
+                    border-radius: 5px 
+                    overflow: hidden 
+                p.title 
+                    font-size: 16px
+                    font-weight: bold 
+                    margin-top: 10px
+                    margin-bottom: 5px
+                p.intro 
+                    font-size: 14px
+                    color: #888
+                h4 
+                    color: dark-blue
+                    font-weight: bold 
+                    margin-top: 12px
+                    span
+                        font-size: 14px
+                        margin-left: 5px 
+                        letter-spacing: 3px
+
+    .section.sec4
+        background-color: #D8E2EB
+        background-image: url("/imgs/milk02.png")
+        background-position: center -5px 
+        background-repeat: no-repeat
+        z-index: 2
+        margin-top: -200px
+        padding-top: 200px
+        height: 800px
+        text-align: center
+        .title 
+            text-align: center
+            margin-bottom: 30px
+        .video-wrap
+            width: 600px
+            margin: 0 auto
+            margin-bottom: 20px
+            border-radius: 10px
+            overflow: hidden
+            box-shadow: 0 0 10px rgba(#000, 0.6)
+        p 
+            font-size: 16px
+            font-weight: bold 
+            color: #666
+        a.more
+            display: inline-block
+            width: 150px 
+            padding: 8px 0
+            font-size: 16px
+            color: #666 
+            background-color: #fff
+            border-radius: 20px
+            font-weight: bold
+            margin: 20px 0
+            margin-top: 30px
+
+    .section.sec5
+        .boxWrap
+            display: flex
+            .box
+                felx-grow: 1
+                height: 500px
+                display: flex
+                width: 50vw
+                align-items: center
+                justify-content: center
+                &.left 
+                    background-image: url("/imgs/story-bg.jpg")
+                    padding-left: calc((100vw - 980px) / 2)
+                &.right
+                    background-image: url("/imgs/quality-bg.jpg")
+                    padding-right: calc((100vw - 980px) / 2)
+                .textGroup 
+                    text-align: center
+                    margin: 30px 0
+                    width: 350px
+                    color: #fff
+                    .title 
+                        margin-bottom: 20px
+                    .content 
+                        font-size: 14px 
+                        line-height: 22px
+                        letter-spacing: 0.5px
+                        text-align: left
+                    a.more
+                        display: inline-block
+                        width: 150px 
+                        padding: 8px 0
+                        font-size: 16px
+                        color: #666 
+                        background-color: #fff
+                        border-radius: 20px
+                        font-weight: bold
+                        margin: 20px 0
+                        margin-top: 30px
+            
+
+
+
+                
+
+

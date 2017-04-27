@@ -168,7 +168,7 @@ gulp.task("serve", function () {
 
     gulp.watch('src/js/**/*.js', ['js']);
     gulp.watch('src/stylus/**/*.styl', ['style']);
-    gulp.watch('src/jade/**/*.jade', ['html']);
+    gulp.watch('src/jade/**/*.jade', ['jade']);
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 

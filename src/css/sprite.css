@@ -16,9 +16,232 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+
+.icon-bg-left {
+  background-image: url(sprite.png);
+  background-position: -2702px -1970px;
+  width: 399px;
+  height: 1326px;
+}
+.icon-bg-right {
+  background-image: url(sprite.png);
+  background-position: -3101px -3296px;
+  width: 326px;
+  height: 1429px;
+}
+.icon-cart {
+  background-image: url(sprite.png);
+  background-position: -399px -371px;
+  width: 28px;
+  height: 25px;
+}
+.icon-category01 {
+  background-image: url(sprite.png);
+  background-position: -463px -462px;
+  width: 28px;
+  height: 28px;
+}
+.icon-category02 {
+  background-image: url(sprite.png);
+  background-position: -549px -548px;
+  width: 33px;
+  height: 33px;
+}
+.icon-category03 {
+  background-image: url(sprite.png);
+  background-position: -491px -490px;
+  width: 28px;
+  height: 28px;
+}
+.icon-category04 {
+  background-image: url(sprite.png);
+  background-position: -519px -518px;
+  width: 30px;
+  height: 30px;
+}
+.icon-close {
+  background-image: url(sprite.png);
+  background-position: -172px -162px;
+  width: 23px;
+  height: 23px;
+}
+.icon-cm {
+  background-image: url(sprite.png);
+  background-position: -717px -661px;
+  width: 69px;
+  height: 69px;
+}
+.icon-facebook {
+  background-image: url(sprite.png);
+  background-position: -219px -209px;
+  width: 24px;
+  height: 24px;
+}
+.icon-favorite {
+  background-image: url(sprite.png);
+  background-position: -371px -347px;
+  width: 28px;
+  height: 24px;
+}
+.icon-instagram {
+  background-image: url(sprite.png);
+  background-position: -195px -185px;
+  width: 24px;
+  height: 24px;
+}
+.icon-left-arrow {
+  background-image: url(sprite.png);
+  background-position: -445px -429px;
+  width: 18px;
+  height: 33px;
+}
+.icon-logo-footer {
+  background-image: url(sprite.png);
+  background-position: -637px -637px;
+  width: 80px;
+  height: 24px;
+}
 .icon-logo {
   background-image: url(sprite.png);
+  background-position: -786px -730px;
+  width: 116px;
+  height: 40px;
+}
+.icon-member {
+  background-image: url(sprite.png);
+  background-position: -345px -321px;
+  width: 26px;
+  height: 26px;
+}
+.icon-menu {
+  background-image: url(sprite.png);
+  background-position: -315px -305px;
+  width: 30px;
+  height: 16px;
+}
+.icon-milk01 {
+  background-image: url(sprite.png);
+  background-position: -9187px -5186px;
+  width: 1920px;
+  height: 723px;
+}
+.icon-milk02 {
+  background-image: url(sprite.png);
+  background-position: -7267px -5016px;
+  width: 1920px;
+  height: 170px;
+}
+.icon-milk03 {
+  background-image: url(sprite.png);
+  background-position: -3427px -4725px;
+  width: 1920px;
+  height: 130px;
+}
+.icon-milk04 {
+  background-image: url(sprite.png);
+  background-position: -5347px -4855px;
+  width: 1920px;
+  height: 161px;
+}
+.icon-pinterest {
+  background-image: url(sprite.png);
+  background-position: -267px -257px;
+  width: 24px;
+  height: 24px;
+}
+.icon-play {
+  background-image: url(sprite.png);
+  background-position: -582px -581px;
+  width: 55px;
+  height: 56px;
+}
+.icon-product-favorite {
+  background-image: url(sprite.png);
+  background-position: -149px -141px;
+  width: 23px;
+  height: 21px;
+}
+.icon-product-info01 {
+  background-image: url(sprite.png);
+  background-position: -29px -32px;
+  width: 18px;
+  height: 17px;
+}
+.icon-product-info02 {
+  background-image: url(sprite.png);
+  background-position: -104px -106px;
+  width: 21px;
+  height: 18px;
+}
+.icon-product-info03 {
+  background-image: url(sprite.png);
+  background-position: -85px -87px;
+  width: 19px;
+  height: 19px;
+}
+.icon-product-info04 {
+  background-image: url(sprite.png);
+  background-position: -66px -68px;
+  width: 19px;
+  height: 19px;
+}
+.icon-product-info05 {
+  background-image: url(sprite.png);
+  background-position: -14px -14px;
+  width: 15px;
+  height: 18px;
+}
+.icon-product-info06 {
+  background-image: url(sprite.png);
+  background-position: -47px -49px;
+  width: 19px;
+  height: 19px;
+}
+.icon-right-arrow {
+  background-image: url(sprite.png);
+  background-position: -427px -396px;
+  width: 18px;
+  height: 33px;
+}
+.icon-search {
+  background-image: url(sprite.png);
   background-position: 0px 0px;
-  width: 327px;
-  height: 213px;
+  width: 14px;
+  height: 14px;
+}
+.icon-share-to-facebook {
+  background-image: url(sprite.png);
+  background-position: -243px -233px;
+  width: 24px;
+  height: 24px;
+}
+.icon-share-to-pinterest {
+  background-image: url(sprite.png);
+  background-position: -291px -281px;
+  width: 24px;
+  height: 24px;
+}
+.icon-slider01 {
+  background-image: url(sprite.png);
+  background-position: -1902px -1490px;
+  width: 800px;
+  height: 480px;
+}
+.icon-slider02 {
+  background-image: url(sprite.png);
+  background-position: -902px -770px;
+  width: 500px;
+  height: 360px;
+}
+.icon-slider03 {
+  background-image: url(sprite.png);
+  background-position: -1402px -1130px;
+  width: 500px;
+  height: 360px;
+}
+.icon-youtube {
+  background-image: url(sprite.png);
+  background-position: -125px -124px;
+  width: 24px;
+  height: 17px;
 }

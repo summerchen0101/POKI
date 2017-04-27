@@ -5,5 +5,185 @@ block currentUrl
 
 block content
     .index
-        h1 ruby
-        .icon.icon-logo
+        .section.sec1
+            .container
+                .header
+                    .header-top
+                        .topSearch
+                            .fa.fa-search
+                            input(type="text", placeholder="我想找...")
+                        .logo
+                            .icon.icon-logo
+                        .rightNavs
+                            .icon.icon-favorite
+                            .icon.icon-cart
+                            .icon.icon-member
+                    .header-nav 
+                        a(href="/", class="active") 首頁
+                        a(href="") 公司簡介
+                        a(href="") 最新消息
+                        a(href="") 產品介紹
+                        a(href="") Q&A
+                        a(href="") 聯絡我們
+            .carousel
+                .imgWrap: img(src="/imgs/slider01.png")
+                .imgWrap: img(src="/imgs/slider01.png")
+                .imgWrap: img(src="/imgs/slider01.png")
+
+        .section.sec2
+            .container
+                .title 
+                    .icon.icon-logo-footer
+                .cardGroup(class="uk-child-width-1-3@s" uk-grid)
+                    div: .card
+                        img(src="/imgs/story-bg.jpg")
+                        p 新品上市的好物唷
+                        a(href="").more More
+                    div: .card
+                        img(src="/imgs/story-bg.jpg")
+                        p 新品上市的好物唷
+                        a(href="").more More
+                    div: .card
+                        img(src="/imgs/story-bg.jpg")
+                        p 新品上市的好物唷
+                        a(href="").more More
+        .section.sec3
+            .container 
+                .title 
+                    .icon.icon-logo-footer
+                .cardGroup(class="uk-child-width-1-3@s uk-child-width-1-4@s" uk-grid)
+                    div: .card
+                        img(src="/imgs/story-bg.jpg")
+                        p.title 新品上市的好物唷
+                        p.intro 產品說明，產品說明產品說明產品說明產品說明!!
+                        h4 NT$ 100元
+                            span /桶
+                    div: .card
+                        img(src="/imgs/story-bg.jpg")
+                        p.title 新品上市的好物唷
+                        p.intro 產品說明，產品說明產品說明產品說明產品說明!!
+                        h4 NT$ 100元
+                            span /桶
+                    div: .card
+                        img(src="/imgs/story-bg.jpg")
+                        p.title 新品上市的好物唷
+                        p.intro 產品說明，產品說明產品說明產品說明產品說明!!
+                        h4 NT$ 100元
+                            span /桶
+                    div: .card
+                        img(src="/imgs/story-bg.jpg")
+                        p.title 新品上市的好物唷
+                        p.intro 產品說明，產品說明產品說明產品說明產品說明!!
+                        h4 NT$ 100元
+                            span /桶
+                    div: .card
+                        img(src="/imgs/story-bg.jpg")
+                        p.title 新品上市的好物唷
+                        p.intro 產品說明，產品說明產品說明產品說明產品說明!!
+                        h4 NT$ 100元
+                            span /桶
+                    div: .card
+                        img(src="/imgs/story-bg.jpg")
+                        p.title 新品上市的好物唷
+                        p.intro 產品說明，產品說明產品說明產品說明產品說明!!
+                        h4 NT$ 100元
+                            span /桶
+                    div: .card
+                        img(src="/imgs/story-bg.jpg")
+                        p.title 新品上市的好物唷
+                        p.intro 產品說明，產品說明產品說明產品說明產品說明!!
+                        h4 NT$ 100元
+                            span /桶
+                    div: .card
+                        img(src="/imgs/story-bg.jpg")
+                        p.title 新品上市的好物唷
+                        p.intro 產品說明，產品說明產品說明產品說明產品說明!!
+                        h4 NT$ 100元
+                            span /桶
+
+        .section.sec4
+            .container 
+                .title 
+                    .icon.icon-logo-footer
+                .video-wrap 
+                    img(src="/imgs/quality-bg.jpg")
+                p 影片標題影片標題在這
+                a.more(href="") 更多影片
+
+        .section.sec5
+            .boxWrap
+                .box.left
+                    .textGroup
+                        .title 
+                            .icon.icon-logo-footer
+                        .content.
+                            測試的內容測試的內容測試的內容測試的內容，測試的內容測試的內容測試的內容測試的內容測試的內容測試的內容，
+                            測試的內容測試的內容測試的內容測試的內容測試的內容，測試的內容測試的內容測試的內容...
+                        a.more(href="") 瞭解更多
+
+                .box.right
+                    .textGroup
+                        .title 
+                            .icon.icon-logo-footer
+                        .content.
+                            測試的內容測試的內容測試的內容測試的內容，測試的內容測試的內容測試的內容測試的內容測試的內容測試的內容，
+                            測試的內容測試的內容測試的內容測試的內容測試的內容，測試的內容測試的內容測試的內容...
+                        a.more(href="") 瞭解更多
+        .footer
+            .container
+                .col.col-1
+                    h5 客服專線
+                    h3 0800-038-906
+                .col.col-2
+                    h5 客服專線
+                    .addrGroup.uk-grid
+                        .addr.uk-width-1-2
+                            p 台北分公司
+                            p 新北市新莊區化成路459號
+                            p (02)8521-2831
+                        .addr.uk-width-1-2
+                            p 台北分公司
+                            p 新北市新莊區化成路459號
+                            p (02)8521-2831
+                        .addr.uk-width-1-2
+                            p 台北分公司
+                            p 新北市新莊區化成路459號
+                            p (02)8521-2831
+                .col.col-3
+                    h5 關於百吉
+                    p 品牌故事
+                    p 最新消息
+                    p 隱私權政策
+                    p 問與答
+                    p 聯絡我們
+                .col.col-4
+                    h5 商品分類
+                    p 雪糕
+                    p 冰淇淋
+                    p 甜筒
+                    p 業務用
+                .col.col-5
+                    h5 會員中心
+                    p 我的帳戶
+                    p 願望清單
+                    p 查看購物車
+                    p 購買紀錄
+                    p 登出
+
+        .footer-sub 
+            .container 
+                .copyright 
+                    p 百吉冰淇淋版權所以 Copyright © 2017 Poki Ice cream All rights reserved.
+                .social
+                    .icon.icon-facebook
+                    .icon.icon-youtube
+                    .icon.icon-pinterest
+                    .icon.icon-instagram
+                .logo 
+                    .icon.icon-logo-footer
+
+
+            
+
+                
+

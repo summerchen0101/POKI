@@ -1,5 +1,130 @@
-div
+*
     box-sizing: border-box
+h1, h2, h3, h4, h5, p, label, ul, li, body, html
+    margin: 0 
+    padding: 0
+html, body 
+    width: 100%
+    overflow-x: hidden
 
 .icon
     display: inline-block
+
+.container
+    width: container-w
+    margin: 0 auto
+    @media(max-width: media-mobile)
+        width: 100vw
+
+
+.header
+    padding: 40px 0
+    .header-top
+        height: 80px
+        display: flex
+        align-items: center
+        border-bottom: 1px solid dark-blue
+        .topSearch
+            background-color: rgba(#fff, 0.7)
+            border-radius: 20px
+            height: 30px
+            padding: 0 10px
+            input[type="text"]
+                border: none
+                background-color: transparent
+                outline: none
+                width: 200px
+                height: 100%
+                font-size: 13px
+        .logo
+            flex-grow: 1
+            text-align: center
+            margin-left: -40px
+
+        .rightNavs
+            .icon 
+                margin-left: 10px
+    .header-nav 
+        text-align: center
+        a
+            color: dark-blue
+            font-size: 15px 
+            display: inline-block
+            border-top: 2px solid transparent
+            margin: 0 17px
+            padding-top: 10px
+            &.active, &:hover
+                border-top: 2px solid dark-blue
+                text-decoration: none
+
+.footer 
+    height: 300px 
+    background-color: #fff
+    .container
+        &:after
+            content: ""
+            display: block 
+            clear: both
+        .col
+            float: left
+            padding: 30px 15px
+            p, h5
+                font-size: 13px
+                letter-spacing: 0.5px
+                line-height: 22px
+                color: #999
+
+            h5 
+                font-weight: bold
+                margin-bottom: 15px
+            &.col-1
+                width: (2/8 * 100)%
+                h3 
+                    color: #999
+            &.col-2
+                width: (3/8 * 100)%
+                .addr
+                    margin-bottom: 20px
+            &.col-3
+                width: (1/8 * 100)%
+            &.col-4
+                width: (1/8 * 100)%
+            &.col-5
+                width: (1/8 * 100)%
+.footer-sub
+    background-color: #fff
+    padding: 30px 0
+    .container
+        display: flex
+        .copyright
+            flex-grow: 1
+            p 
+                font-size: 12.5px
+                color: #999
+                margin-top: 10px
+                letter-spacing: 0.5px
+        .social
+            padding: 0 20px
+            display: flex
+            align-items: center
+            .icon 
+                margin: 0 10px
+        .logo 
+            padding: 0 20px 
+            border-left: 1px solid #999
+
+
+
+
+
+
+    
+    
+
+
+.slick-initialized 
+    .slick-slide
+        margin: 0 30px
+    .slick-dots
+        bottom: -50px
+

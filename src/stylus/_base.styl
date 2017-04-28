@@ -16,7 +16,7 @@ h2.font
     display: inline-block
 
 .container
-    width: $containerW
+    width: container-w
     margin: 0 auto
     @media(max-width: media-mobile)
         width: 100vw
@@ -27,7 +27,7 @@ h2.font
     clear: both
 
 .divider 
-    width: $containerW
+    width: container-w
     margin: 0 auto
     border-top: 1px solid #aaa
 
@@ -175,8 +175,11 @@ h2.font
             text-decoration: none 
             display: block
             color: #666
-            &:hover
-                color: #333
+            transition: all 0.2s ease-in-out
+        a:hover 
+            color: dark-blue
+            img 
+                box-shadow: 0 3px 5px rgba(#000, 0.1)
         .video-link 
             position: absolute
             top: 0 
@@ -188,6 +191,7 @@ h2.font
             min-height: 200px
             border-radius: 5px 
             overflow: hidden 
+            transition: all 0.2s ease-in-out
         p.title 
             font-size: 16px
             font-weight: bold 

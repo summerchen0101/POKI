@@ -235,10 +235,15 @@ h2.font {
   text-decoration: none;
   display: block;
   color: #666;
+  transition: all 0.2s ease-in-out;
 }
 .productGroup > div a:hover,
 .productGroup .card a:hover {
-  color: #333;
+  color: #1d2087;
+}
+.productGroup > div a:hover img,
+.productGroup .card a:hover img {
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
 }
 .productGroup > div .video-link,
 .productGroup .card .video-link {
@@ -254,6 +259,7 @@ h2.font {
   min-height: 200px;
   border-radius: 5px;
   overflow: hidden;
+  transition: all 0.2s ease-in-out;
 }
 .productGroup > div p.title,
 .productGroup .card p.title {
@@ -306,11 +312,11 @@ h2.font {
   cursor: pointer;
 }
 .index .section.sec1 .carousel button.ctrl-arrow.arrow-left {
-  left: calc((100vw - 1100px) / 2);
+  left: calc((100vw - 1100px) / 2 + 60px);
   margin-left: 40px;
 }
 .index .section.sec1 .carousel button.ctrl-arrow.arrow-right {
-  right: calc((100vw - 1100px) / 2);
+  right: calc((100vw - 1100px) / 2 + 60px);
   margin-right: 40px;
 }
 .index .section.sec1 .carousel .imgWrap {
@@ -702,7 +708,7 @@ h2.font {
           justify-content: space-between;
 }
 .product-item .section.sub {
-  margin-top: 30px;
+  margin: 60px 0;
 }
 .product-item .section.sub .hot-items {
   text-align: center;

@@ -1,13 +1,18 @@
 .index
-    background-color: #C3E0F1
+    background-color: #ebf6ff
     .section
         position: relative
+    .section.nav
+        position: absolute 
+        z-index: 3
+        width: 100%
     .section.sec1
         background-color: #93C3E1
         padding-bottom: 250px
         z-index: 2
         background-image: url("/imgs/slider-bg.jpg")
         background-position: center top
+        padding-top: 200px
         
         .carousel
             width: 100%
@@ -43,7 +48,8 @@
         padding-top: 170px
         margin-top: -180px
         padding-bottom: 200px
-
+        @media(max-width: media-mobile)
+            padding-bottom: 20px
         .adGroup
             text-align: center
             a.card 
@@ -92,9 +98,11 @@
         background-repeat: no-repeat, repeat
         z-index: 2
         margin-top: -200px
-        padding-top: 200px
-        height: 800px
+        padding: 200px 0
         text-align: center
+        @media(max-width: media-mobile)
+            padding-top: 150px
+            padding-bottom: 50px
         .video-wrap
             width: 600px
             height: 300px
@@ -105,6 +113,9 @@
             box-shadow: 0 0 10px rgba(#000, 0.6)
             position: relative 
             cursor: pointer
+            @media(max-width: media-mobile)
+                width: 100%
+                height: 220px
             &:after 
                 content: ""
                 display: block 
@@ -145,6 +156,8 @@
                 margin-top: 12px
         .boxWrap
             display: flex
+            @media(max-width: media-mobile)
+                display: block
             .box
                 felx-grow: 1
                 height: 500px
@@ -152,6 +165,8 @@
                 width: 50vw
                 align-items: center
                 justify-content: center
+                @media(max-width: media-mobile)
+                    width: 100vw
                 &.left 
                     background-image: url("/imgs/story-bg.jpg")
                     padding-left: "calc((100vw - %s) / 2)" % container-w

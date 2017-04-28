@@ -3,9 +3,13 @@
     background-image: url('/imgs/milk04.png'), url('/imgs/products-bg.png')
     background-position: center top, center top
     background-repeat: no-repeat
+    @media(max-width: media-mobile)
+        background-position: center 50px, center top
     
     .section.nav
-        //
+        height: 200px
+        @media(max-width: media-mobile)
+            height: 100px
     .section.intro
         padding-bottom: 60px
         .container 
@@ -14,6 +18,8 @@
             .imgs-area
                 width: 50%
                 float: left
+                @media(max-width: media-mobile)
+                    width: 100%
                 .main-img
                     background-image: url("/imgs/product-bg.jpg")
                     background-size: cover
@@ -39,9 +45,15 @@
                 width: 50%
                 float: left
                 padding-left: 25px
+                @media(max-width: media-mobile)
+                    width: 100%
+                    padding-top: 40px
+                    padding-left: 0
                 > h2 
                     font-weight: bold
                     font-size: 35px
+                    @media(max-width: media-mobile)
+                        font-size: 30px
                     &.title
                         color: #666
                         margin-bottom: 5px
@@ -80,10 +92,15 @@
                                 font-size: 15px
                                 letter-spacing: 3px
                                 margin-left: 10px
+                                @media(max-width: media-mobile)
+                                    font-size: 13px
+                                    letter-spacing: 1px
                             .unit-content 
                                 font-size: 18px
                                 margin-left: 10px
                                 color: #777
+                                @media(max-width: media-mobile)
+                                    font-size: 13px
 
                 .sub-intro
                     text-align: center
@@ -94,7 +111,7 @@
                         background-color: #ebf6ff
                         position: relative
                         bottom: -10px
-                        z-index: 9
+                        z-index: 2
                         font-size: 15px 
                         font-weight: bold
                         letter-spacing: 3px

@@ -1,11 +1,15 @@
 .products
     background-color: #C3E0F1
     .section.nav
-        height: 350px
+        height: 300px
         background-color: #EBF6FF
         background-image: url('/imgs/milk03.png'), url('/imgs/list-bg.jpg')
-        background-position: center 225px, center center
+        background-position: center 180px, center center
         background-repeat: no-repeat
+        @media(max-width: media-mobile)
+            height: 170px
+            background-position: center 50px, center center
+
     .section.content
         padding-bottom: 50px
         background-color: #EBF6FF
@@ -43,6 +47,8 @@
                 float: left
                 width: 30% 
                 padding-right: 30px
+                @media(max-width: media-mobile)
+                    width: 100%
                 h2 
                     background-color: #fff 
                     border-radius: 30px 
@@ -85,4 +91,7 @@
             .products-area
                 float: left
                 width: 70% 
+                @media(max-width: media-mobile)
+                    width: 100%
+                    margin-top: 50px
                 

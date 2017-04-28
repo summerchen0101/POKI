@@ -18,6 +18,7 @@ h2.font
 .container
     width: container-w
     margin: 0 auto
+    padding: 0 20px
     @media(max-width: media-mobile)
         width: 100vw
 
@@ -40,17 +41,81 @@ h2.font
     h5 
         font-weight: bold
 .header
-    padding: 40px 0
+    padding-top: 40px
+    @media(max-width: media-mobile)
+        position: fixed
+        top: 0 
+        left: 0
+        width: 100%
+        padding: 0
+        background-color: #fff
+        z-index: 9
+        border-bottom: 1px solid dark-blue
+    &.fixed
+        position: fixed
+        top: 0 
+        left: 0
+        width: 100%
+        padding: 0
+        background-color: #fff
+        z-index: 9
+        border-bottom: 1px solid dark-blue
+        .header-top
+            padding: 0 20px
+            height: 60px
+            border-bottom: none
+            @media(max-width: media-mobile)
+                padding: 0
+            .menu-btn
+                display: inline-block
+            .topSearch
+                margin-left: 20px
+        .header-nav 
+            display: none
+
+    &.active
+        .header-nav 
+            display: block
+            position: absolute
+            border-top: 1px solid dark-blue
+            background-color: rgba(#fff, 0.8)
+            width: 100%
+            left: 0
+            a
+                padding: 20px 0
+                @media(max-width: media-mobile)
+                    padding: 10px 0
+                &.active, &:hover
+                    border-top: none
+                    font-weight: bold
+                    @media(max-width: media-mobile)
+                        background-color: dark-blue
+                        color: #fff
+    .container
+        //
     .header-top
         height: 80px
         display: flex
         align-items: center
         border-bottom: 1px solid dark-blue
+        @media(max-width: media-mobile)
+            display: flex
+            align-items: center
+            border-bottom: none
+            height: 60px
+        .menu-btn
+            display: none
+            width: 40px
+            cursor: pointer
+            @media(max-width: media-mobile)
+                display: inline-block
         .topSearch
-            background-color: rgba(#fff, 0.7)
+            background-color: rgba(#eee, 0.7)
             border-radius: 20px
             height: 30px
             padding: 0 10px
+            @media(max-width: media-mobile)
+                display: none
             input[type="text"]
                 border: none
                 background-color: transparent
@@ -62,12 +127,19 @@ h2.font
             flex-grow: 1
             text-align: center
             margin-left: -40px
+            @media(max-width: media-mobile)
+                margin: 0
 
         .rightNavs
+            @media(max-width: media-mobile)
+                display: none
             .icon 
                 margin-left: 10px
     .header-nav 
         text-align: center
+        @media(max-width: media-mobile)
+            display: none
+            padding: 20px 0
         a
             color: dark-blue
             font-size: 15px 
@@ -75,6 +147,9 @@ h2.font
             border-top: 2px solid transparent
             margin: 0 17px
             padding-top: 10px
+            @media(max-width: media-mobile)
+                display: block
+                padding: 10px 0
             &.active, &:hover
                 border-top: 2px solid dark-blue
                 text-decoration: none
@@ -97,27 +172,42 @@ h2.font
             h5 
                 font-weight: bold
                 margin-bottom: 15px
+            
             &.col-1
                 width: (2/8 * 100)%
+                @media(max-width: media-mobile)
+                    width: 100%
                 h3 
                     color: #999
             &.col-2
                 width: (3/8 * 100)%
+                @media(max-width: media-mobile)
+                    width: 100%
                 .addr
                     margin-bottom: 20px
             &.col-3
                 width: (1/8 * 100)%
+                @media(max-width: media-mobile)
+                    width: 33%
             &.col-4
                 width: (1/8 * 100)%
+                @media(max-width: media-mobile)
+                    width: 33%
             &.col-5
                 width: (1/8 * 100)%
+                @media(max-width: media-mobile)
+                    width: 33%
 .footer-sub
     background-color: #fff
     padding: 30px 0
     .container
         display: flex
+        @media(max-width: media-mobile)
+            // display: block
         .copyright
             flex-grow: 1
+            @media(max-width: media-mobile)
+                display: none
             p 
                 font-size: 12.5px
                 color: #999
@@ -127,11 +217,21 @@ h2.font
             padding: 0 20px
             display: flex
             align-items: center
+            @media(max-width: media-mobile)
+                // display: none
+                padding-top: 20px
+                width: 100%
+                justify-content: center
             .icon 
                 margin: 0 10px
         .logo 
             padding: 0 20px 
             border-left: 1px solid #999
+            @media(max-width: media-mobile)
+                padding: 15px 0
+                margin-left: 10px
+                border: none
+                display: none
 
 
 

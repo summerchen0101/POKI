@@ -1,9 +1,179 @@
 .product-item
-    background-color: #C3E0F1
-    .section.nav
-        height: 350px
-        background-color: #EBF6FF
-        background-image: url('/imgs/milk04.png')
-        background-position: center top
-        background-repeat: no-repeat
+    background-color: #EBF6FF
+    background-image: url('/imgs/milk04.png'), url('/imgs/products-bg.png')
+    background-position: center top, center top
+    background-repeat: no-repeat
     
+    .section.nav
+        //
+    .section.intro
+        padding-bottom: 60px
+        .container 
+            &:after 
+                @extend .clearfix
+            .imgs-area
+                width: 50%
+                float: left
+                .main-img
+                    background-image: url("/imgs/product-bg.jpg")
+                    background-size: cover
+                    height: 500px
+                    display: flex 
+                    align-items: center
+                    justify-content: center
+                    border-radius: 10px
+                    overflow: hidden
+                    margin-bottom: 25px
+                    padding: 0
+                .thumb-imgs
+                    display: flex
+                    margin-right: -10px
+                    .img-item
+                        border-radius: 10px
+                        overflow: hidden
+                        padding: 0
+                        margin-right: 10px
+
+                    
+            .intro-area
+                width: 50%
+                float: left
+                padding-left: 25px
+                > h2 
+                    font-weight: bold
+                    font-size: 35px
+                    &.title
+                        color: #666
+                        margin-bottom: 5px
+                        
+                    &.price
+                        color: dark-blue
+                        span 
+                            font-size: 16px
+                            margin-left: 10px
+                            letter-spacing: 2px
+                            &.ps 
+                                color: #aaa
+                                margin-left: 20px
+                > p 
+                    margin: 10px 0
+                    font-weight: bold
+                .intro-box
+                    background-color: #fff
+                    border-radius: 10px 
+                    margin-top: 20px
+                    .line 
+                        border-top: 1px solid #ccc
+                        &:first-of-type 
+                            border-top: none
+                        &:after 
+                            @extend .clearfix
+                        .unit
+                            display: flex 
+                            align-items: center
+                            height: 50px
+                            width: 50%
+                            float: left
+                            padding: 0 15px
+                            .unit-title 
+                                font-weight: bold
+                                font-size: 15px
+                                letter-spacing: 3px
+                                margin-left: 10px
+                            .unit-content 
+                                font-size: 18px
+                                margin-left: 10px
+                                color: #777
+
+                .sub-intro
+                    text-align: center
+                    color: #777
+                    margin-top: 5px
+                    .sub-intro-title
+                        padding: 0 20px
+                        background-color: #ebf6ff
+                        position: relative
+                        bottom: -10px
+                        z-index: 9
+                        font-size: 15px 
+                        font-weight: bold
+                        letter-spacing: 3px
+                        display: inline-block
+                        .icon 
+                            vertical-align: middle
+                            margin-right: 8px
+                    .sub-intro-content
+                        padding: 20px 0
+                        border-top: 1px solid #999
+                        border-bottom: @border-top
+                        font-size: 14px
+                        text-align: left
+                        letter-spacing: 0.5px
+
+                .add-to-cart
+                    height: 50px
+                    margin-top: 25px
+                    border-radius: 30px
+                    overflow: hidden
+                    &:after 
+                        @extend .clearfix
+                    .count, .button 
+                        font-size: 16px
+                        letter-spacing: 2px
+                        float: left 
+                        width: 50%
+                        display: flex 
+                        align-items: center 
+                        justify-content: center
+                        height: 100%
+                    .count 
+                        background-color: #fff
+                        color: #666
+                        span.label 
+                            margin-right: 30px
+                            font-size: 14px
+                            letter-spacing: 2px
+                        span.num 
+                            font-size: 28px
+                            padding: 0 20px
+                        i 
+                            color: #999
+                            cursor: pointer
+                    .button 
+                        background-color: dark-blue
+                        color: #fff
+                .social-icons 
+                    text-align: center
+                    margin: 15px 0
+                    .icon 
+                        margin: 0 5px
+                .sale-stores
+                    background-color: #fff
+                    padding: 15px
+                    border-radius: 10px
+                    h5 
+                        color: #666
+                        font-size: 14px
+                        letter-spacing: 2px
+                        font-weight: bold
+                        margin-bottom: 10px
+                    .store-logos 
+                        display: flex 
+                        justify-content: space-between
+
+
+    .section.sub 
+        margin-top: 30px
+        .hot-items
+            text-align: center
+        .product-items
+            margin-left: -25px
+            &:after 
+                @extend .clearfix 
+            .item 
+                float: left 
+                width: 25%
+                padding-left: 25px
+                img 
+                    max-width: 100%
+        

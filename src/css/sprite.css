@@ -16,18 +16,23 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-
 .icon-bg-left {
   background-image: url(sprite.png);
-  background-position: -2702px -1970px;
+  background-position: -948px -816px;
   width: 399px;
   height: 1326px;
 }
 .icon-bg-right {
   background-image: url(sprite.png);
-  background-position: -3101px -3296px;
+  background-position: -1347px -2142px;
   width: 326px;
   height: 1429px;
+}
+.icon-cart-white {
+  background-image: url(sprite.png);
+  background-position: -582px -581px;
+  width: 46px;
+  height: 46px;
 }
 .icon-cart {
   background-image: url(sprite.png);
@@ -67,13 +72,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-cm {
   background-image: url(sprite.png);
-  background-position: -717px -661px;
+  background-position: -763px -707px;
   width: 69px;
   height: 69px;
 }
 .icon-facebook {
   background-image: url(sprite.png);
-  background-position: -219px -209px;
+  background-position: -243px -233px;
   width: 24px;
   height: 24px;
 }
@@ -97,13 +102,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-logo-footer {
   background-image: url(sprite.png);
-  background-position: -637px -637px;
+  background-position: -683px -683px;
   width: 80px;
   height: 24px;
 }
 .icon-logo {
   background-image: url(sprite.png);
-  background-position: -786px -730px;
+  background-position: -832px -776px;
   width: 116px;
   height: 40px;
 }
@@ -121,37 +126,37 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-milk01 {
   background-image: url(sprite.png);
-  background-position: -9187px -5186px;
+  background-position: -7433px -4032px;
   width: 1920px;
   height: 723px;
 }
 .icon-milk02 {
   background-image: url(sprite.png);
-  background-position: -7267px -5016px;
+  background-position: -5513px -3862px;
   width: 1920px;
   height: 170px;
 }
 .icon-milk03 {
   background-image: url(sprite.png);
-  background-position: -3427px -4725px;
+  background-position: -1673px -3571px;
   width: 1920px;
   height: 130px;
 }
 .icon-milk04 {
   background-image: url(sprite.png);
-  background-position: -5347px -4855px;
+  background-position: -3593px -3701px;
   width: 1920px;
   height: 161px;
 }
 .icon-pinterest {
   background-image: url(sprite.png);
-  background-position: -267px -257px;
+  background-position: -219px -209px;
   width: 24px;
   height: 24px;
 }
 .icon-play {
   background-image: url(sprite.png);
-  background-position: -582px -581px;
+  background-position: -628px -627px;
   width: 55px;
   height: 56px;
 }
@@ -211,7 +216,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-share-to-facebook {
   background-image: url(sprite.png);
-  background-position: -243px -233px;
+  background-position: -267px -257px;
   width: 24px;
   height: 24px;
 }
@@ -220,24 +225,6 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   background-position: -291px -281px;
   width: 24px;
   height: 24px;
-}
-.icon-slider01 {
-  background-image: url(sprite.png);
-  background-position: -1902px -1490px;
-  width: 800px;
-  height: 480px;
-}
-.icon-slider02 {
-  background-image: url(sprite.png);
-  background-position: -902px -770px;
-  width: 500px;
-  height: 360px;
-}
-.icon-slider03 {
-  background-image: url(sprite.png);
-  background-position: -1402px -1130px;
-  width: 500px;
-  height: 360px;
 }
 .icon-youtube {
   background-image: url(sprite.png);

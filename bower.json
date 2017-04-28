@@ -29,7 +29,8 @@
     "scrollmagic": "^2.0.5",
     "uikit": "^3.0.0",
     "slick-carousel": "^1.6.0",
-    "nouislider": "^9.2.0"
+    "nouislider": "^9.2.0",
+    "material-design-icons": "^3.0.1"
   },
   "devDependencies": {
     "html5shiv": "~3.7.2"

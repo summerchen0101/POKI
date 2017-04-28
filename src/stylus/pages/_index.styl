@@ -6,7 +6,8 @@
         background-color: #93C3E1
         padding-bottom: 250px
         z-index: 2
-        // background-image: url("/imgs/slider-bg.jpg")
+        background-image: url("/imgs/slider-bg.jpg")
+        background-position: center top
         
         .carousel
             width: 100%
@@ -20,10 +21,10 @@
                 z-index: 9
                 cursor: pointer
                 &.arrow-left
-                    left: calc((100vw - 980px) / 2)
+                    left: calc((100vw - 1100px) / 2)
                     margin-left: 40px
                 &.arrow-right
-                    right: calc((100vw - 980px) / 2)
+                    right: calc((100vw - 1100px) / 2)
                     margin-right: 40px
             .imgWrap
                 height: 100%
@@ -40,13 +41,11 @@
         background-repeat: no-repeat
         // height: 723px
         padding-top: 170px
-        margin-top: -250px
+        margin-top: -180px
         padding-bottom: 200px
-        .title 
-            text-align: center
-            margin-bottom: 35px
 
         .adGroup
+            text-align: center
             a.card 
                 text-align: center
                 display: block
@@ -56,6 +55,7 @@
                     color: #333
                 img 
                     width: 100%
+                    max-height: 200px
                     border-radius: 10px 
                     overflow: hidden 
                 p 
@@ -64,15 +64,17 @@
                     font-size: 17px
                     font-weight: bold 
 
-                a.more 
-                    text-decoration: none 
-                    border: none 
-                    background-color: #BCC4CC
-                    color: #fff
-                    display: inline-block 
-                    width: 100px 
-                    padding: 3px 0
-                    border-radius: 20px
+            a.more 
+                text-decoration: none 
+                border: none 
+                background-color: #BCC4CC
+                color: #fff
+                display: inline-block 
+                width: 100px 
+                padding: 3px 0
+                border-radius: 20px
+                &:hover 
+                    background-color: darken(#BCC4CC, 10%)
 
     .section.sec3
         background-color: #fff
@@ -81,31 +83,41 @@
         margin-top: -200px
         padding: 200px 0
 
-        .title 
-            text-align: center
-            margin-bottom: 35px
 
      
     .section.sec4
         background-color: #D8E2EB
-        background-image: url("/imgs/milk02.png")
+        background-image: url("/imgs/milk02.png"), url("/imgs/brickwall-blue.png")
         background-position: center -5px 
-        background-repeat: no-repeat
+        background-repeat: no-repeat, repeat
         z-index: 2
         margin-top: -200px
         padding-top: 200px
         height: 800px
         text-align: center
-        .title 
-            text-align: center
-            margin-bottom: 30px
         .video-wrap
             width: 600px
+            height: 300px
             margin: 0 auto
             margin-bottom: 20px
             border-radius: 10px
             overflow: hidden
             box-shadow: 0 0 10px rgba(#000, 0.6)
+            position: relative 
+            cursor: pointer
+            &:after 
+                content: ""
+                display: block 
+                position: absolute
+                border-top: 20px solid transparent
+                border-bottom: @border-top
+                border-left: 40px solid #fff 
+                // border-right: @border-left
+                top: calc(50% - 20px)
+                left: calc(50% - 10px)
+            img 
+                height: 100%
+                width: auto
         p 
             font-size: 16px
             font-weight: bold 
@@ -121,8 +133,16 @@
             font-weight: bold
             margin: 20px 0
             margin-top: 30px
+            &:hover 
+                text-decoration: none 
+                background-color: #eee
 
     .section.sec5
+        .section-title
+            h2, h5 
+                color: #fff
+            h5  
+                margin-top: 12px
         .boxWrap
             display: flex
             .box
@@ -134,10 +154,10 @@
                 justify-content: center
                 &.left 
                     background-image: url("/imgs/story-bg.jpg")
-                    padding-left: calc((100vw - 980px) / 2)
+                    padding-left: calc((100vw - 1100px) / 2)
                 &.right
                     background-image: url("/imgs/quality-bg.jpg")
-                    padding-right: calc((100vw - 980px) / 2)
+                    padding-right: calc((100vw - 1100px) / 2)
                 .textGroup 
                     text-align: center
                     margin: 30px 0

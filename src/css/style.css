@@ -33,6 +33,11 @@ h2.font {
   margin: 0 auto;
   padding: 0 20px;
 }
+@media (max-width: 1024px) {
+  .container {
+    width: 100vw;
+  }
+}
 @media (max-width: 768px) {
   .container {
     width: 100vw;
@@ -513,7 +518,9 @@ h2.font {
 }
 @media (max-width: 768px) {
   .index .section.sec2 {
-    padding-bottom: 20px;
+    background-color: #ebf6ff;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 .index .section.sec2 .adGroup {
@@ -559,6 +566,11 @@ h2.font {
   z-index: 1;
   margin-top: -200px;
   padding: 200px 0;
+}
+@media (max-width: 768px) {
+  .index .section.sec3 {
+    padding-top: 280px;
+  }
 }
 .index .section.sec4 {
   background-color: #d8e2eb;
@@ -748,6 +760,12 @@ h2.font {
   margin-bottom: 25px;
   padding: 0;
   position: relative;
+}
+@media (max-width: 768px) {
+  .product-item .section.intro .container .imgs-area .main-img {
+    width: calc(100vw - 40px);
+    height: calc(100vw - 40px);
+  }
 }
 .product-item .section.intro .container .imgs-area .main-img .carousel {
   width: 100%;

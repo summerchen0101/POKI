@@ -43,7 +43,6 @@ h2.font {
 .product-item .section.intro .container:after,
 .product-item .section.intro .container .intro-area .intro-box .line:after,
 .product-item .section.intro .container .intro-area .add-to-cart:after,
-.product-item .section.sub .product-items:after,
 .products .section.content .main:after {
   content: "";
   display: table;
@@ -991,16 +990,8 @@ h2.font {
 .product-item .section.sub .hot-items {
   text-align: center;
 }
-.product-item .section.sub .product-items {
-  margin-left: -25px;
-}
-.product-item .section.sub .product-items .item {
-  float: left;
-  width: 25%;
-  padding-left: 25px;
-}
-.product-item .section.sub .product-items .item img {
-  max-width: 100%;
+.product-item .section.sub .hot-items .productGroup .card-wrap {
+  margin: 0 10px;
 }
 .products {
   background-color: #c3e0f1;

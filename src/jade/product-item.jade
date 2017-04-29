@@ -14,7 +14,7 @@ block content
             .container
                 .imgs-area
                     .main-img.uk-card.uk-card-default.uk-card-body
-                        .carousel
+                        .carousel#product-carousel
                             .imgWrap: img(src="/imgs/product-sample.jpg")
                             .imgWrap: img(src="/imgs/product-sample.jpg")
                             .imgWrap: img(src="/imgs/product-sample.jpg")
@@ -94,8 +94,8 @@ block content
                     .section-title  
                         h2.font Hot Items 
                         h5 人氣商品
-                    .productGroup(class="uk-child-width-1-4@s" uk-grid)
-                        div: .card
+                    .productGroup#hot-sale-carousel
+                        .card-wrap: .card
                             a.icon.icon-cm.video-link(href="/")
                             a(href="/product-item.html")
                                 img(src="/imgs/product.png")
@@ -103,7 +103,7 @@ block content
                                 p.intro 產品說明，產品說明產品說明產品說明產品說明!!
                                 h4 NT$ 100元
                                     span /桶
-                        div: .card
+                        .card-wrap: .card
                             a.icon.icon-cm.video-link(href="/")
                             a(href="/product-item.html")
                                 img(src="/imgs/product.png")
@@ -111,7 +111,7 @@ block content
                                 p.intro 產品說明，產品說明產品說明產品說明產品說明!!
                                 h4 NT$ 100元
                                     span /桶
-                        div: .card
+                        .card-wrap: .card
                             a.icon.icon-cm.video-link(href="/")
                             a(href="/product-item.html")
                                 img(src="/imgs/product.png")
@@ -119,7 +119,7 @@ block content
                                 p.intro 產品說明，產品說明產品說明產品說明產品說明!!
                                 h4 NT$ 100元
                                     span /桶
-                        div: .card
+                        .card-wrap: .card
                             a.icon.icon-cm.video-link(href="/")
                             a(href="/product-item.html")
                                 img(src="/imgs/product.png")
@@ -127,11 +127,39 @@ block content
                                 p.intro 產品說明，產品說明產品說明產品說明產品說明!!
                                 h4 NT$ 100元
                                     span /桶
-
-
-
-
-
+                        .card-wrap: .card
+                            a.icon.icon-cm.video-link(href="/")
+                            a(href="/product-item.html")
+                                img(src="/imgs/product.png")
+                                p.title 新品上市的好物唷
+                                p.intro 產品說明，產品說明產品說明產品說明產品說明!!
+                                h4 NT$ 100元
+                                    span /桶
+                        .card-wrap: .card
+                            a.icon.icon-cm.video-link(href="/")
+                            a(href="/product-item.html")
+                                img(src="/imgs/product.png")
+                                p.title 新品上市的好物唷
+                                p.intro 產品說明，產品說明產品說明產品說明產品說明!!
+                                h4 NT$ 100元
+                                    span /桶
+                        .card-wrap: .card
+                            a.icon.icon-cm.video-link(href="/")
+                            a(href="/product-item.html")
+                                img(src="/imgs/product.png")
+                                p.title 新品上市的好物唷
+                                p.intro 產品說明，產品說明產品說明產品說明產品說明!!
+                                h4 NT$ 100元
+                                    span /桶
+                        .card-wrap: .card
+                            a.icon.icon-cm.video-link(href="/")
+                            a(href="/product-item.html")
+                                img(src="/imgs/product.png")
+                                p.title 新品上市的好物唷
+                                p.intro 產品說明，產品說明產品說明產品說明產品說明!!
+                                h4 NT$ 100元
+                                    span /桶
+                    
                         
         include widgets/footer.jade
 

@@ -31,6 +31,32 @@
                     overflow: hidden
                     margin-bottom: 25px
                     padding: 0
+                    position: relative
+                    .carousel
+                        width: 100%
+                        height: 100%
+                        button.ctrl-arrow
+                            border: none 
+                            background-color: transparent 
+                            outline: none
+                            display: block 
+                            position: absolute
+                            top: 45%
+                            z-index: 99
+                            cursor: pointer
+                            &.arrow-left
+                                left: 0
+                            &.arrow-right
+                                right: 0
+                        .slick-dots
+                            margin-bottom: 25px
+                        .imgWrap
+                            @media(max-width: media-mobile)
+                                width: calc(100vw - 40px)
+                                margin: 0 auto
+                            img 
+                                width: 100%
+                                z-index: 99
                 .thumb-imgs
                     display: flex
                     margin-right: -10px
@@ -39,6 +65,11 @@
                         overflow: hidden
                         padding: 0
                         margin-right: 10px
+                        position: relative
+                        &.active 
+                            top: -2px
+                            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3)
+
 
                     
             .intro-area

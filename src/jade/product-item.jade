@@ -3,6 +3,9 @@ extends layout
 block currentUrl
     -var currentUrl = 'product-item'
 
+block script
+    script(src="/js/product-item.js")
+
 block content
     .product-item
         .section.nav
@@ -11,16 +14,20 @@ block content
             .container
                 .imgs-area
                     .main-img.uk-card.uk-card-default.uk-card-body
-                        img(src="/imgs/product.png")
+                        .carousel
+                            .imgWrap: img(src="/imgs/product-sample.jpg")
+                            .imgWrap: img(src="/imgs/product-sample.jpg")
+                            .imgWrap: img(src="/imgs/product-sample.jpg")
+                            .imgWrap: img(src="/imgs/product-sample.jpg")
                     .thumb-imgs
+                        .uk-card.uk-card-default.uk-card-body.img-item.active
+                            img(src="/imgs/product-sample.jpg")
                         .uk-card.uk-card-default.uk-card-body.img-item
-                            img(src="/imgs/product.png")
+                            img(src="/imgs/product-sample.jpg")
                         .uk-card.uk-card-default.uk-card-body.img-item
-                            img(src="/imgs/product.png")
+                            img(src="/imgs/product-sample.jpg")
                         .uk-card.uk-card-default.uk-card-body.img-item
-                            img(src="/imgs/product.png")
-                        .uk-card.uk-card-default.uk-card-body.img-item
-                            img(src="/imgs/product.png")
+                            img(src="/imgs/product-sample.jpg")
                 .intro-area
                     h2.title 百吉冰淇淋家庭號<香草>
                     h2.price NT$ 100元

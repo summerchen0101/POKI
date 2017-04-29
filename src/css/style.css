@@ -384,12 +384,6 @@ h2.font {
   content: "";
   display: none;
 }
-.slick-initialized .slick-slide {
-  margin: 0 30px;
-}
-.slick-initialized .slick-dots {
-  bottom: -50px;
-}
 .productGroup > div,
 .productGroup .card {
   text-align: center;
@@ -469,6 +463,12 @@ h2.font {
   background-image: url("/imgs/slider-bg.jpg");
   background-position: center top;
   padding-top: 200px;
+}
+.index .section.sec1 .slick-initialized .slick-slide {
+  margin: 0 30px;
+}
+.index .section.sec1 .slick-initialized .slick-dots {
+  bottom: -50px;
 }
 .index .section.sec1 .carousel {
   width: 100%;
@@ -748,6 +748,40 @@ h2.font {
   overflow: hidden;
   margin-bottom: 25px;
   padding: 0;
+  position: relative;
+}
+.product-item .section.intro .container .imgs-area .main-img .carousel {
+  width: 100%;
+  height: 100%;
+}
+.product-item .section.intro .container .imgs-area .main-img .carousel button.ctrl-arrow {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  display: block;
+  position: absolute;
+  top: 45%;
+  z-index: 99;
+  cursor: pointer;
+}
+.product-item .section.intro .container .imgs-area .main-img .carousel button.ctrl-arrow.arrow-left {
+  left: 0;
+}
+.product-item .section.intro .container .imgs-area .main-img .carousel button.ctrl-arrow.arrow-right {
+  right: 0;
+}
+.product-item .section.intro .container .imgs-area .main-img .carousel .slick-dots {
+  margin-bottom: 25px;
+}
+@media (max-width: 768px) {
+  .product-item .section.intro .container .imgs-area .main-img .carousel .imgWrap {
+    width: calc(100vw - 40px);
+    margin: 0 auto;
+  }
+}
+.product-item .section.intro .container .imgs-area .main-img .carousel .imgWrap img {
+  width: 100%;
+  z-index: 99;
 }
 .product-item .section.intro .container .imgs-area .thumb-imgs {
   display: -webkit-box;
@@ -760,6 +794,11 @@ h2.font {
   overflow: hidden;
   padding: 0;
   margin-right: 10px;
+  position: relative;
+}
+.product-item .section.intro .container .imgs-area .thumb-imgs .img-item.active {
+  top: -2px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 .product-item .section.intro .container .intro-area {
   width: 50%;

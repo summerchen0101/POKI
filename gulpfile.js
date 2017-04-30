@@ -38,13 +38,13 @@ gulp.task('archive:src', function () {
         .pipe(gulp.dest('archive/'));
 });
 
-gulp.task('archive:dist', ['build'], function () {
+gulp.task('archive:dist', function () {
     return gulp.src('dist/**/*')
         .pipe(zip(`${pk.name}_${time}.zip`))
         .pipe(gulp.dest('archive/'));
 });
 
-gulp.task('archive', ['archive:src', 'archive:dist']);
+gulp.task('archive', ['archive:dist']);
 
 
 

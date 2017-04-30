@@ -1,4 +1,5 @@
 *.zip
 /src/bower
 /bower_components
+/node_modules
 /dist

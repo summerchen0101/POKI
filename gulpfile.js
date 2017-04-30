@@ -69,12 +69,12 @@ gulp.task('build:combine', function () {
 });
 
 gulp.task('build:copy',function(){
-    return gulp.src('./src/**/*')
+    return gulp.src(['./src/**/*', '!./src/bower/**/*'])
         .pipe(gulp.dest('./dist'))
 })
 
 gulp.task('build:fonts',function(){
-    return gulp.src('./bower_components/**/*.{otf,ttf,woff,woff2}')
+    return gulp.src('./src/bower/**/*.{otf,ttf,woff,woff2}')
         .pipe(flatten())
         .pipe(gulp.dest('./dist/fonts'))
 })
@@ -88,6 +88,7 @@ gulp.task('build:remove', function (cb) {
 
 gulp.task('build', function (cb) {
     runSequence(
+        'jade',
         'build:clean',
         'build:copy',
         'build:combine',

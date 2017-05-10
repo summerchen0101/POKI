@@ -227,7 +227,7 @@ h2.font {
   display: inline-block;
   border-top: 2px solid transparent;
   margin: 0 17px;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 @media (max-width: 768px) {
   .header .header-nav a {
@@ -239,6 +239,11 @@ h2.font {
 .header .header-nav a:hover {
   border-top: 2px solid #1d2087;
   text-decoration: none;
+}
+.header .header-nav a img {
+  max-height: 22px;
+  position: relative;
+  top: -5px;
 }
 .footer {
   height: 300px;

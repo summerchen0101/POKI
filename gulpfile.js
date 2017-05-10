@@ -32,19 +32,19 @@ var time = moment().format('MMDD');
 // Archive Tasks
 /////////////////////////////////////////////////////////////////
 
-gulp.task('archive:src', function () {
+gulp.task('zip:src', function () {
     return gulp.src('src/**/*')
         .pipe(zip(`${pk.name}_${time}_dev.zip`))
         .pipe(gulp.dest('archive/'));
 });
 
-gulp.task('archive:dist', function () {
+gulp.task('zip:dist', function () {
     return gulp.src('dist/**/*')
         .pipe(zip(`${pk.name}_${time}.zip`))
         .pipe(gulp.dest('archive/'));
 });
 
-gulp.task('archive', ['archive:dist']);
+gulp.task('zip', ['zip:dist']);
 
 
 

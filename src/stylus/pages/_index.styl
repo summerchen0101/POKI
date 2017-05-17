@@ -13,6 +13,8 @@
         background-image: url("/imgs/slider-bg.jpg")
         background-position: center top
         padding-top: 200px
+        @media(max-width: media-mobile)
+            padding-top: 130px
 
         .slick-initialized 
             .slick-slide
@@ -41,7 +43,7 @@
                 height: 100%
                 @media(max-width: media-mobile)
                     width: calc(100vw - 40px)
-                    margin: 0 auto
+                    margin: 0 10px
                 img 
                     max-width: 100%
     

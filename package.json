@@ -36,7 +36,7 @@
     "gulp.spritesmith": "^6.2.1",
     "jade-loader": "^0.8.0",
     "jquery": "^2.1.4",
-    "moment": "^2.13.0",
+    "moment": "^2.29.2",
     "nouislider": "^9.2.0",
     "run-sequence": "^1.2.1",
     "slick-carousel": "^1.6.0",
